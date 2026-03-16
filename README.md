@@ -41,7 +41,6 @@ El material aquí subido se estructura por áreas de conocimiento de BD:
 
 ### 4. 🔐 Scripts Administrativos
 - Creación de usuarios de base de datos y asignación de perfiles.
-- Control de roles y privilegios (`GRANT`, `REVOKE`).
 
 ---
 
