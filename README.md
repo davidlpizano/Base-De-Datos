@@ -1,7 +1,5 @@
 <div align="center">
 
-# 🗄️ Bases de Datos - ASIR
-
 <img src="https://capsule-render.vercel.app/api?type=waving&color=F80000&height=200&section=header&text=Database%20Lab&fontSize=50&fontColor=ffffff&animation=fadeIn" alt="Bases de Datos Banner">
 
 **Modelado Entidad-Relación, desarrollo en SQL y Administración con Oracle.**
