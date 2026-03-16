@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=F80000&height=200&section=header&text=Database%20Lab&fontSize=50&fontColor=ffffff&animation=fadeIn" alt="Bases de Datos Banner">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=F80000&height=200&section=header&text=Database%20Lab&fontSize=50&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=David%20Lopez%20%7C%20ASIR&descSize=20&descAlign=50&descAlignY=62&descColor=ffffff" alt="Bases de Datos Banner">
 
 **Modelado Entidad-Relación, desarrollo en SQL y Administración con Oracle.**
 
