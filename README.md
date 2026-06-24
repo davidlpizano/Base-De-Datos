@@ -1,76 +1,92 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=F80000&height=200&section=header&text=Database%20Lab&fontSize=50&fontColor=ffffff&animation=twinkling&fontAlignY=40&desc=David%20Lopez%20%7C%20ASIR&descSize=20&descAlign=50&descAlignY=62&descColor=ffffff" alt="Bases de Datos Banner">
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F80000,100:B71C1C&height=220&section=header&text=Database%20Lab&fontSize=55&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=David%20Lopez%20%7C%20ASIR&descSize=20&descAlign=50&descAlignY=60&descColor=ffcdd2" alt="Bases de Datos Banner" width="100%">
 
-**Modelado Entidad-Relación, desarrollo en SQL y Administración con Oracle.**
+**Modelado Entidad-Relacion, desarrollo en SQL y administracion con Oracle.**
 
-[![Oracle SQL](https://img.shields.io/badge/Oracle_SQL_Developer-F80000?style=for-the-badge&logo=oracle&logoColor=white)](#)
-[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](#)
-[![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)](#)
+[![Oracle SQL](https://img.shields.io/badge/Oracle_SQL-F80000?style=flat-square&logo=oracle&logoColor=white)](#)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](#)
+[![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)](#)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white)](#)
 
 </div>
 
----
+<br/>
 
 ## 🎯 Sobre este repositorio
 
-Este repositorio recopila mis ejercicios, proyectos y apuntes sobre diseño, implementación y explotación de **Bases de Datos Relacionales**, como parte fundamental de mis estudios en **ASIR**.
+Ejercicios, proyectos y apuntes sobre diseño, implementacion y explotacion de **Bases de Datos Relacionales** como parte de mi formacion en **ASIR**.
 
-El enfoque principal de estas prácticas abarca desde la conceptualización teórica (paso del modelo E/R al lógico/relacional) hasta el desarrollo de sentencias DCL, DDL y DML ejecutadas profesionalmente con herramientas como **Oracle SQL Developer**.
+Desde la conceptualizacion teorica (modelo E/R al logico/relacional) hasta sentencias DCL, DDL y DML con **Oracle SQL Developer**. Varios servicios de mi homelab (Nextcloud, Firefly III, Grafana) utilizan bases de datos MariaDB/SQLite en produccion.
 
-Varios de los servicios de mi homelab (Nextcloud, Firefly III, Grafana) utilizan bases de datos MariaDB/MySQL en producción, lo que refuerza los conceptos aquí practicados con casos reales de administración.
+<br/>
 
----
+## 📂 Contenido
 
-## 📂 Organización del contenido
+<table>
+<tr>
+<td width="50%" valign="top">
 
-El material aquí subido se estructura por áreas de conocimiento de BD:
+### 📋 Modelado y Diseño
+- Esquemas **Entidad-Relacion (E/R)**
+- Normalizacion (1FN, 2FN, 3FN)
+- Diseño logico y fisico
 
-### 1. 📋 Modelado y Diseño
-- Esquemas **Entidad-Relación (E/R)** y diagramas relacionales.
-- Normalización de tablas (1FN, 2FN, 3FN).
-- Diseño lógico y físico de bases de datos.
+### 🏗️ Definicion de Datos (DDL)
+- `CREATE`, `ALTER`, `DROP`
+- Primary Keys, Foreign Keys, Checks
+- Secuencias, indices y vistas
 
-### 2. 🏗️ Estructura y Definición de Datos (DDL)
-- Scripts de creación de bases de datos y tablas (`CREATE`, `ALTER`, `DROP`).
-- Declaración de restricciones relacionales (Primary Keys, Foreign Keys, Checks).
-- Creación de secuencias, índices y vistas.
+</td>
+<td width="50%" valign="top">
 
-### 3. 🔍 Manejo de Datos y Consultas (DML)
-- Inserción, actualización y borrado masivo de datos (`INSERT`, `UPDATE`, `DELETE`).
-- **Consultas Multi-tabla:** Dominio avanzado de los diferentes tipos de `JOIN` (Inner, Left/Right Outer, Full, Cross).
-- Uso de **Subconsultas** en cláusulas WHERE, FROM o SELECT.
-- Funciones de agrupación (`GROUP BY`, `HAVING`) y ordenación estadística.
+### 🔍 Consultas (DML)
+- `INSERT`, `UPDATE`, `DELETE`
+- **JOINs:** Inner, Left/Right Outer, Full, Cross
+- Subconsultas en WHERE, FROM, SELECT
+- `GROUP BY`, `HAVING` y funciones de agregacion
 
-### 4. 🔐 Scripts Administrativos
-- Creación de usuarios de base de datos y asignación de perfiles.
-- Control de roles y privilegios (`GRANT`, `REVOKE`).
+### 🔐 Administracion
+- Usuarios y perfiles de BD
+- Roles y privilegios (`GRANT`, `REVOKE`)
 
-### 5. 🏠 Bases de datos en producción (Homelab)
+</td>
+</tr>
+</table>
 
-Servicios de mi homelab que utilizan bases de datos reales:
+<br/>
 
-| Servicio | Motor de BD | Uso |
-| :--- | :--- | :--- |
-| **Nextcloud** | MariaDB | Usuarios, archivos, calendario, contactos |
-| **Firefly III** | MariaDB | Transacciones financieras, categorías, presupuestos |
-| **Grafana** | SQLite | Dashboards, datasources, alertas |
-| **Vaultwarden** | SQLite | Contraseñas cifradas y configuración |
-| **Speedtest Tracker** | SQLite | Historial de mediciones de velocidad |
-
----
-
-## 🚀 Cómo ejecutar estos scripts
-
-La mayoría de los ficheros de código `.sql` en este repositorio fueron creados para el entorno de **Oracle**. Si los ejecutas en otros SGBD (como MySQL, PostgreSQL o SQL Server) pueden requerir ligeras modificaciones en sintaxis o tipos de datos (como el paso de `VARCHAR2` a `VARCHAR`).
-
-Te recomiendo revisarlos con Oracle SQL Developer o utilizar LiveSQL para pruebas rápidas.
-
----
+## 🏠 Bases de datos en produccion (Homelab)
 
 <div align="center">
 
-*"Los datos son el petróleo del siglo XXI; la consulta adecuada es la refinería."*
+Servicios de mi homelab que utilizan bases de datos reales:
+
+| Servicio | Motor | Uso |
+| :--- | :---: | :--- |
+| **Nextcloud** | ![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white) | Usuarios, archivos, calendario, contactos |
+| **Firefly III** | ![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white) | Transacciones, categorias, presupuestos |
+| **Grafana** | ![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) | Dashboards, datasources, alertas |
+| **Vaultwarden** | ![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) | Contraseñas cifradas y configuracion |
+| **Speedtest Tracker** | ![SQLite](https://img.shields.io/badge/-SQLite-003B57?style=flat-square&logo=sqlite&logoColor=white) | Historial de mediciones de velocidad |
+
+</div>
+
+<br/>
+
+## 🚀 Como ejecutar estos scripts
+
+> Los ficheros `.sql` fueron creados para **Oracle**. En otros SGBD (MySQL, PostgreSQL, SQL Server) pueden requerir ajustes en sintaxis o tipos de datos (`VARCHAR2` → `VARCHAR`). Recomiendo Oracle SQL Developer o LiveSQL para pruebas rapidas.
+
+<br/>
+
+<div align="center">
+
+*"Los datos son el petroleo del siglo XXI; la consulta adecuada es la refineria."*
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:F80000,100:B71C1C&height=100&section=footer" width="100%"/>
 
 **[⬅️ Volver a mi perfil principal](https://github.com/davidlpizano/davidlpizano)**
 
