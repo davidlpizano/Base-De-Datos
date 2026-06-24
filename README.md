@@ -6,6 +6,7 @@
 
 [![Oracle SQL](https://img.shields.io/badge/Oracle_SQL_Developer-F80000?style=for-the-badge&logo=oracle&logoColor=white)](#)
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](#)
+[![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)](#)
 
 </div>
 
@@ -16,6 +17,8 @@
 Este repositorio recopila mis ejercicios, proyectos y apuntes sobre diseño, implementación y explotación de **Bases de Datos Relacionales**, como parte fundamental de mis estudios en **ASIR**.
 
 El enfoque principal de estas prácticas abarca desde la conceptualización teórica (paso del modelo E/R al lógico/relacional) hasta el desarrollo de sentencias DCL, DDL y DML ejecutadas profesionalmente con herramientas como **Oracle SQL Developer**.
+
+Varios de los servicios de mi homelab (Nextcloud, Firefly III, Grafana) utilizan bases de datos MariaDB/MySQL en producción, lo que refuerza los conceptos aquí practicados con casos reales de administración.
 
 ---
 
@@ -41,6 +44,19 @@ El material aquí subido se estructura por áreas de conocimiento de BD:
 
 ### 4. 🔐 Scripts Administrativos
 - Creación de usuarios de base de datos y asignación de perfiles.
+- Control de roles y privilegios (`GRANT`, `REVOKE`).
+
+### 5. 🏠 Bases de datos en producción (Homelab)
+
+Servicios de mi homelab que utilizan bases de datos reales:
+
+| Servicio | Motor de BD | Uso |
+| :--- | :--- | :--- |
+| **Nextcloud** | MariaDB | Usuarios, archivos, calendario, contactos |
+| **Firefly III** | MariaDB | Transacciones financieras, categorías, presupuestos |
+| **Grafana** | SQLite | Dashboards, datasources, alertas |
+| **Vaultwarden** | SQLite | Contraseñas cifradas y configuración |
+| **Speedtest Tracker** | SQLite | Historial de mediciones de velocidad |
 
 ---
 
@@ -48,7 +64,7 @@ El material aquí subido se estructura por áreas de conocimiento de BD:
 
 La mayoría de los ficheros de código `.sql` en este repositorio fueron creados para el entorno de **Oracle**. Si los ejecutas en otros SGBD (como MySQL, PostgreSQL o SQL Server) pueden requerir ligeras modificaciones en sintaxis o tipos de datos (como el paso de `VARCHAR2` a `VARCHAR`).
 
-Te recomiendo revisarlos con Oracle SQL Developer O utilizar LiveSQL para pruebas rápidas.
+Te recomiendo revisarlos con Oracle SQL Developer o utilizar LiveSQL para pruebas rápidas.
 
 ---
 
